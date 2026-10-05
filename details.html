@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreya MS · Portfolio</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=32" />
+</head>
+<body>
+  <!-- fades out on load so arriving from the ball's white flash is seamless -->
+  <div class="page-in" aria-hidden="true"></div>
+
+  <!-- ============ THE PAGE ============ -->
+  <main id="info" class="view is-active">
+
+    <!-- ambient sky: drifting clouds pinned to the top of the view -->
+    <div class="scene" aria-hidden="true">
+      <span class="cloud c1"></span>
+      <span class="cloud c2"></span>
+      <span class="cloud c3"></span>
+      <span class="cloud c4"></span>
+    </div>
+
+    <div class="site">
+
+      <div class="site-top">
+        <a href="index.html" class="pdx-back" aria-label="Back to grass">
+          <span class="pdx-back-arrow">←</span> Back to Grass
+        </a>
+      </div>
+
+      <!-- left: profile sidebar -->
+      <aside class="side">
+        <div class="side-tag"><span class="mini-ball"></span>Pokémon Details</div>
+        <div class="side-hero">
+          <!-- standing trainer: save your PNG as avatar.png in the project folder -->
+          <div class="side-shadow" aria-hidden="true"></div>
+          <img class="side-avatar" src="Avataar.png" alt="Shreya MS"
+               onload="var p=document.getElementById('tcgPhoto'); if(p){p.style.display='none';}"
+               onerror="this.remove();" />
+          <div class="pdx-photo" id="tcgPhoto"><span>★</span></div>
+          <div class="side-stats" aria-hidden="true">
+            <span class="side-stat ht"><i>HT</i>5'4"</span>
+            <span class="side-stat wt"><i>WT</i>83 kg</span>
+          </div>
+        </div>
+        <h1 class="side-name">Shreya MS</h1>
+        <p class="side-role">Aspiring Analyst & Marketer · Early-Career</p>
+        <p class="side-tagline">Curious fresher mixing data and marketing to understand customers, and learning something new every day.</p>
+
+        <div class="side-facts">
+          <span><i>📍</i>Bengaluru, India</span>
+        </div>
+
+        <div class="side-block">
+          <span class="side-label">Skills</span>
+          <div class="pdx-chips side-chips">
+            <span class="pdx-chip">Customer Insights</span>
+            <span class="pdx-chip">CRM & Email Marketing</span>
+            <span class="pdx-chip">Campaign Strategy</span>
+            <span class="pdx-chip">Ads (Google & Meta)</span>
+            <span class="pdx-chip">Excel &amp; Power BI </span>
+            <span class="pdx-chip">SQL &amp; Analytics</span>
+          </div>
+        </div>
+
+        <div class="side-block">
+  <span class="side-label">Links</span>
+  <div class="side-links">
+    <a href="https://www.linkedin.com/in/msshreya/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+    <a href="mailto:shreyams888@gmail.com">Email <span>↗</span></a>
+  </div>
+</div>
+</aside>
+
+      <!-- right: content (stacked sections) -->
+      <section class="main">
+
+        <!-- About -->
+        <section class="sec">
+          <h2 class="sec-title">About</h2>
+          <p class="pdx-lead">
+            I'm Shreya, a fresher who loves the mix of data and marketing: understanding
+            what customers want, and turning it into clear, simple actions.
+          </p>
+          <p class="pdx-lead" style="margin-top:16px;">
+            I'm just getting started, and I'm excited about every new tool and challenge. 
+            I learn by building, so I keep making projects across SQL, Excel, Python,
+            and Power BI on the data side, and email campaigns, funnel strategy, and ad audits on the marketing side.
+          </p>
+          <p class="pdx-lead" style="margin-top:16px;">
+            I'm looking for my first big role in marketing, operations, business, data, or product,
+            where I can learn fast and add value from day one.
+          </p>
+          <p class="pdx-lead" style="margin-top:16px;">
+            Want to talk? You can reach me by emailing
+            <a href="mailto:thezeroquotient@create.wtf">shreyams888@gmail.com</a>.
+          </p>
+        </section>
+
+        <!-- Experience (company list ← → details) -->
+        <section class="sec">
+  <h2 class="sec-title">Experience</h2>
+  <div class="xp" id="xp">
+    <div class="xp-tabs" role="tablist">
+      <button class="xp-co is-active" data-co="0">Simplilearn</button>
+      <button class="xp-co" data-co="1">AISECT Limited</button>
+    </div>
+    <div class="xp-details">
+      <div class="xp-detail is-active" data-co="0">
+        <h4>Learner Success Manager, Career Services <span>@ Simplilearn</span></h4>
+        <p class="xp-date">Apr 2025 - Sep 2026 · Bengaluru</p>
+        <ul>
+          <li>First real full-time job. Traded college casuals for corporate outfits and learned the etiquette that comes with them.</li>
+          <li>Owned a portfolio of 500+ learners: Salesforce tickets, career mentoring sessions, and resolutions.</li>
+          <li>Took full ownership of the job portal project, working directly with the tech team and turning learner feedback and glitches into fixes.</li>
+          <li>Exceeded expectations on my KRAs.</li>
+        </ul>
+      </div>
+      <div class="xp-detail" data-co="1">
+        <h4>Data Quality Analyst Intern <span>@ AISECT Limited</span></h4>
+        <p class="xp-date">Jul 2024 - Oct 2024 · Mangaluru</p>
+        <ul>
+          <li>First internship. Learned the technical basics hands-on, beyond the classroom.</li>
+          <li>Came for the experience, left with friends from college who stuck around.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Projects -->
+<section class="sec">
+  <h2 class="sec-title">Projects</h2>
+  <div class="pdx-projects">
+    <a class="pdx-proj" href="https://github.com/msshreyaa/forhim-Ecommerce-strategy" target="_blank" rel="noopener">
+      <div><h4>forhim: Funnel Vision</h4><p>Mapped forhim.'s D2C journey from scroll to sale.</p></div>
+      <span class="pdx-proj-arrow">↗</span>
+    </a>
+    <a class="pdx-proj" href="https://github.com/msshreyaa/shopsphere-customer-segmentation-sql" target="_blank" rel="noopener">
+      <div><h4>ShopSphere: Churn Hunter</h4><p>Used SQL to catch ShopSphere customers before they walk away.</p></div>
+      <span class="pdx-proj-arrow">↗</span>
+    </a>
+    <a class="pdx-proj" href="https://github.com/msshreyaa/vitalcare-ad-campaign-turnaround" target="_blank" rel="noopener">
+      <div><h4>VitalCare: Campaign Comeback</h4><p>Flipped VitalCare's struggling ad campaign into a winner.</p></div>
+      <span class="pdx-proj-arrow">↗</span>
+    </a>
+    <a class="pdx-proj" href="https://github.com/msshreyaa/CRM-Lead-Nurture-SkillBridge" target="_blank" rel="noopener">
+      <div><h4>SkillBridge: Slow Burn</h4><p>18 emails designed to turn SkillBridge leads into learners.</p></div>
+      <span class="pdx-proj-arrow">↗</span>
+    </a>
+    <a class="pdx-proj" href="https://github.com/msshreyaa/Cardio-Vascular-Disease-Data-Analysis" target="_blank" rel="noopener">
+      <div><h4>Decoding Heart Risk</h4><p>Found the patterns hiding in cardiovascular data.</p></div>
+      <span class="pdx-proj-arrow">↗</span>
+    </a>
+    <a class="pdx-proj" shref="https://github.com/msshreyaa/Netflix-Report" target="_blank" rel="noopener">
+      <div><h4>Netflix: Behind the Binge</h4><p>Unpacked what's really in Netflix's content library.</p></div>
+      <span class="pdx-proj-arrow">↗</span>
+    </a>
+  </div>
+</section>
+
+    <!-- playful footer: drop a Pokémon into the crowd -->
+    <footer class="pfoot">
+      <div class="pfoot-cta">
+        <p class="pfoot-title">Gotta catch 'em all</p>
+        <p class="pfoot-sub">Every visitor leaves a Pokémon behind. Add yours to the crowd.</p>
+        <button id="pfootBtn" class="pfoot-btn">＋ Drop a Pokémon</button>
+        <span id="pfootCount" class="pfoot-count">…</span>
+      </div>
+      <div class="pfoot-stage" id="pfootStage"></div>
+      <div class="pfoot-ground" aria-hidden="true"></div>
+    </footer>
+  </main>
+
+  <script src="script.js?v=32"></script>
+</body>
+</html>
